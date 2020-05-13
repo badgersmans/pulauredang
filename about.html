@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/04468144ed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>About Us</title>
+</head>
+<body>
+
+    <!-- ============================================================= !-->
+    <!--                        NARVAR START                           !-->
+    <!-- ============================================================= !-->
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" width="60" height="40" class="d-inline-block align-bottom px-2">
+                Pulau Redang
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id=navbarCollapse> 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a href="blog.html" class="nav-link">Blog</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link" data-toggle="modal" data-target="#registerModal">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+<!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+			<form action="login.php" method="POST">
+				<div class="modal-header">				
+					<h4 class="modal-title">Login</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">				
+					<div class="form-group">
+						<label>Username</label>
+						<input type="text" class="form-control" required="required" id="username" name="username">
+					</div>
+					<div class="form-group">
+						<div class="clearfix">
+							<label>Password</label>
+							<!-- <a href="#" class="pull-right text-muted"><small>Forgot?</small></a> -->
+						</div>
+						
+						<input type="password" class="form-control" required="required" type="password" id="password" name="password">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<!-- <label class="checkbox-inline pull-left"><input type="checkbox"> Remember me</label> -->
+					<input type="submit" class="btn btn-primary pull-right" value="Login">
+				</div>
+			</form>
+		</div>
+    </div>
+  </div>
+
+
+
+<!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+			<form action="register.php" method="POST">
+				<div class="modal-header">				
+					<h4 class="modal-title">Register</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">				
+					<div class="form-group">
+						<label>Username</label>
+						<input type="text" class="form-control" required="required" id="username" name="username">
+					</div>
+					<div class="form-group">
+						<div class="clearfix">
+							<label>Password</label>
+							<!-- <a href="#" class="pull-right text-muted"><small>Forgot?</small></a> -->
+						</div>
+						
+						<input type="password" class="form-control" required="required" type="password" id="password" name="password">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<!-- <label class="checkbox-inline pull-left"><input type="checkbox"> Remember me</label> -->
+					<input type="submit" class="btn btn-primary pull-right" value="Login">
+				</div>
+			</form>
+		</div>
+    </div>
+  </div>
+    <!-- ============================================================= !-->
+    <!--                        NARVAR END                             !-->
+    <!-- ============================================================= !-->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================= !-->
+    <!--                        HEADER START                           !-->
+    <!-- ============================================================= !-->
+    <header id="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 m-auto text-center">
+                    <h1 class="display-4">About Us</h1>
+                    <p class="lead">We are the best around🤪</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============================================================= !-->
+    <!--                        HEADER END                             !-->
+    <!-- ============================================================= !-->
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================= !-->
+    <!--                      ABOUT SECTION START                      !-->
+    <!-- ============================================================= !-->
+    <section id="about" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>What We Do</h1>
+                    <p>We bring you to a holiday like no other! By the end of your trip with us, you'll be like this cat! He's amazed and so will you 🙀</p>
+                    <p>Another paragraph to add space...otherwise it'll be too empty here...🤷‍♂️🤷‍♂️🤷‍♂️</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/meow.jpg" alt="" class="img-fluid rounded-circle d-none d-md-block">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================= !-->
+    <!--                      ABOUT SECTION END                        !-->
+    <!-- ============================================================= !-->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================= !-->
+    <!--                      ICON BOXES START                         !-->
+    <!-- ============================================================= !-->
+    <!-- <section id="icon-boxes" class="p-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card bg-warning text-white text-center">
+                         <div class="card-body">
+                             <i class="fas fa-building fa-3x"></i>
+                             <h3>Sample Heading</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, labore!
+                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-success text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-bullhorn fa-3x"></i>
+                            <h3>Sample Heading</h3>
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, labore!
+                        </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-info text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-comments fa-3x"></i>
+                            <h3>Sample Heading</h3>
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, labore!
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white text-center">
+                         <div class="card-body">
+                             <i class="fas fa-box fa-3x"></i>
+                             <h3>Sample Heading</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, labore!
+                         </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-danger text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-credit-card fa-3x"></i>
+                            <h3>Sample Heading</h3>
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, labore!
+                        </div>
+                   </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark text-white text-center">
+                        <div class="card-body">
+                            <i class="fas fa-coffee fa-3x"></i>
+                            <h3>Sample Heading</h3>
+                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, labore!
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- ============================================================= !-->
+    <!--                      ICON BOXES END                           !-->
+    <!-- ============================================================= !-->
+
+
+
+
+
+
+
+
+
+
+    <!-- ============================================================= !-->
+    <!--                      TESTIMONIALS START                       !-->
+    <!-- ============================================================= !-->
+    <section id="testimonials" class="p-4 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center">Testimonials</h2>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="slider">
+                        <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">
+                                    Oh meow! Ever since i've been to pulau redang, now I'm no longer a cat, i've turned a lion! 🦁
+                                </p>
+                                <footer class="blockquote-footer">Matrix cat from 
+                                    <cite title="Matrix">The Matrix</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">
+                                    It's totally like OMGGG, I just can't wait to go again!
+                                </p>
+                                <footer class="blockquote-footer">Morpheus From
+                                    <cite title="Matrix">The Matrix</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">
+                                    I've found my purpose, thank you guyzzz!!!🤟
+                                </p>
+                                <footer class="blockquote-footer">Trinity From
+                                    <cite title="Matrix">The Matrix</cite>
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ============================================================= !-->
+    <!--                      TESTIMONIALS END                         !-->
+    <!-- ============================================================= !-->
+
+
+
+    <!-- ============================================================= !-->
+    <!--                      FOOTER START                             !-->
+    <!-- ============================================================= !-->
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Pulau redang is one of the largest islands off the east coast of Peninsular Malaysia. 
+                  It is famous for its crystal clear waters and white sandy beaches. It is one of nine islands,
+                   which form a marine sanctuary park offering snorkeling and diving opportunities for tourists.</p>
+            </div>
+    
+            <!-- <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              </ul>
+            </div> -->
+    
+            <div class="col-xs-6 col-md-6">
+              <h6>Sitemap</h6>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <!-- <li><a href="blog.html">Blog</a></li> -->
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; <span id="year"></span> All Rights Reserved by 
+           <a href="#">Shawn</a>.
+              </p>
+            </div>
+    
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="youtube" href="#"><i class="fab fa-youtube"></i></i></a></li>
+                <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>   
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <!-- ============================================================= !-->
+    <!--                      FOOTER END                               !-->
+    <!-- ============================================================= !-->
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+
+        <script>
+            // Get the current year for the copyright
+            $('#year').text(new Date().getFullYear());
+
+
+            $('.slider').slick({
+                infinite: true,
+                slideToShow: 1,
+                slideToScroll: 1
+            });
+        </script>
+    </body>
+</html>

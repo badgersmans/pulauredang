@@ -1,0 +1,582 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+#showcase {
+    font-family: "Questrial", sans-serif; 
+}
+
+#showcase {
+    height: 100vh;
+    background: url('../img/redang/heading\ photo.jpg') bottom center/cover no-repeat;
+    position: relative; 
+}
+
+#showcase h1 {
+    font-family: "Questrial",  sans-serif;
+    font-weight: 900;
+    line-height: 1; 
+  }
+
+@media (max-width:500px){
+  #showcase h1 {
+    font-size: 5rem; 
+  }
+}
+
+    #showcase #header {
+      z-index: 2; 
+    } 
+
+    #showcase #overlay {
+      background: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; 
+    }
+
+
+.navbar .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+    border-left: rgb(80, 80, 80) 3px solid;
+}
+
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.7);
+  }
+
+.carousel-item {
+    height: 450px;
+}
+
+.carousel-image-1 {
+    background: url("../img/redang/carousel\ image\ 1.jpg");
+    background-size: cover;
+}
+
+.carousel-image-2 {
+    background: url("../img/redang/carousel\ image\ 2.jpg");
+    background-size: cover;
+}
+
+.carousel-image-3 {
+    background: url("../img/redang/image\ 1.jpg");
+    background-size: cover;
+}
+
+#home-heading {
+    position: relative;
+    min-height: 200px;
+    background: url(../img/lights.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+#video-play {
+    position: relative;
+    min-height: 200px;
+    background: url(../img/redang/carousel\ image\ 3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0 - 200px;
+    text-align: center;
+    color: #fff;
+}
+
+#video-play a {
+    /* youtube red color */
+    color: #ff0000;
+}
+
+#page-header {
+    font-family: "Questrial", sans-serif; 
+    height: 200px;
+    background: url(../img/lights.jpg);
+    background-position: 0 -360;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 1px #eee solid;
+    padding-top: 50px;
+}
+
+#page-header h1 {
+    font-weight: 900;
+}
+
+.about-img {
+    margin-top: -50px;
+}
+
+#faq .card {
+    border: #444;
+}
+
+#faq a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#faq .card-body, 
+#faq .card-header {
+    background: #333;
+}
+
+#main-footer {
+    background: #000;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: "Questrial", sans-serif;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+  }
+
+
+
+
+
+
+
+
+/* FOOTER  */
+  .site-footer {
+    background-color: #0c0d10;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+  }
+  .site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+  }
+  .site-footer hr.small {
+    margin: 20px 0;
+  }
+  .site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+  }
+  .site-footer a {
+    color: #737373;
+  }
+  .site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links {
+    padding-left: 0;
+    list-style: none;
+  }
+  .footer-links li {
+    display: block;
+  }
+  .footer-links a {
+    color: #737373;
+  }
+  .footer-links a:active,
+  .footer-links a:focus,
+  .footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+  }
+  .footer-links.inline li {
+    display: inline-block;
+  }
+  .site-footer .social-icons {
+    text-align: right;
+  }
+  .site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+  }
+  .copyright-text {
+    margin: 0;
+  }
+  @media (max-width: 991px) {
+    .site-footer {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .site-footer {
+      padding-bottom: 0;
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+      text-align: center;
+    }
+  }
+  .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  .social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+  }
+  .social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  
+  
+  /* .social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+  } */
+  
+  .social-icons a:hover {
+    color: #ffffff;
+  }
+  
+  .social-icons a.facebook:hover {
+    background-color: #3b5998;
+  }
+  .social-icons a.youtube:hover {
+    background-color: #c4302b;
+  }
+  .social-icons a.twitter:hover {
+    background-color: #1da1f2;
+  }
+  .social-icons a.instagram:hover {
+    background: linear-gradient(45deg, #f46f30 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#c32aa3 100%); 
+   }
+
+  /* #fd5949 */
+
+  @media (max-width: 767px) {
+    .social-icons li.title {
+      display: block;
+      margin-right: 0;
+      font-weight: 600;
+    }
+  }
+
+
+
+
+
+
+
+
+/* IMAGE HOVER EFFECTS */
+  .image-hover-effects img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    margin-bottom: 15px;
+    -webkit-transform: scale(1.00);
+    transform: scale(1.00);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.image-hover-effects img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+
+
+
+
+
+
+
+/*
+ *
+ * login-register modal
+ * Autor: Creative Tim
+ * Web-autor: creative.tim
+ * Web script: http://creative-tim.com
+ * 
+ */
+ 
+/*  Shake animation  */
+
+/* @charset "UTF-8"; */
+
+.animated {
+  -webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+.animated.hinges {
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+}
+
+.animated.slow {
+	-webkit-animation-duration: 3s;
+	   -moz-animation-duration: 3s;
+	     -o-animation-duration: 3s;
+	        animation-duration: 3s;
+}
+
+.animated.snail {
+	-webkit-animation-duration: 4s;
+	   -moz-animation-duration: 4s;
+	     -o-animation-duration: 4s;
+	        animation-duration: 4s;
+}
+
+@-webkit-keyframes shake {
+	0%, 100% {-webkit-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
+}
+
+@-moz-keyframes shake {
+	0%, 100% {-moz-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-moz-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-moz-transform: translateX(10px);}
+}
+
+@-o-keyframes shake {
+	0%, 100% {-o-transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {-o-transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {-o-transform: translateX(10px);}
+}
+
+@keyframes shake {
+	0%, 100% {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
+.shake {
+	-webkit-animation-name: shake;
+	-moz-animation-name: shake;
+	-o-animation-name: shake;
+	animation-name: shake;
+}
+
+.login .modal-dialog{
+    width: 350px;
+}
+.login .modal-footer{
+    border-top: 0;
+    margin-top: 0px;
+    padding: 10px 20px 20px;
+}
+.login .modal-header {
+    border: 0 none;
+    padding: 15px 15px 15px;
+/*     padding: 11px 15px; */
+}
+/* .login .modal-body{
+    background-color: #eeeeee;
+} */
+.login .division {
+    float: none;
+    margin: 0 auto 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.login .division .line {
+    border-top: 1px solid #DFDFDF;
+    position: absolute;
+    top: 10px;
+    width: 34%;
+}
+.login .division .line.l {
+    left: 0;
+}
+.login .division .line.r {
+    right: 0;
+}
+.login .division span {
+    color: #424242;
+    font-size: 17px;
+}
+.login .box .social {
+    float: none;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.login .social .circle{
+    background-color: #EEEEEE;
+    color: #FFFFFF;
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 17px;
+    padding: 15px;
+}
+.login .social .circle .fa{
+    font-size: 16px;
+}
+.login .social .facebook{
+    background-color: #455CA8;
+    color: #FFFFFF;
+}
+.login .social .google{
+    background-color: #F74933;
+}
+.login .social .github{
+    background-color: #403A3A;
+}
+.login .facebook:hover{
+    background-color: #6E83CD;
+}
+.login .google:hover{
+    background-color: #FF7566;
+}
+.login .github:hover{
+    background-color: #4D4D4d;;
+}
+.login .forgot {
+    color: #797979;
+    margin-left: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+.login .btn-login, .registerBox .btn-register{
+    background-color: #00BBFF;
+    border-color: #00BBFF;
+    border-width: 0;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.login .btn-login:hover, .registerBox .btn-register:hover{
+    background-color: #00A4E4;
+    color: #FFFFFF;
+}
+.login .form-control{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.09);
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;
+    color: #FFFFFF;
+}
+.login .form-control:hover{
+    background-color: rgba(0,0,0,.16);
+}
+.login .form-control:focus{
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;
+    background-color: rgba(0,0,0,0.23);
+    color: #FFFFFF;
+}
+.login .box .form input[type="text"], .login .box .form input[type="password"] {
+    border-radius: 3px;
+    border: none;
+    color: #333333;
+    font-size: 16px;
+    height: 46px;
+    margin-bottom: 5px;
+    padding: 13px 12px;
+    width: 100%;
+}
+
+
+@media (max-width:400px){
+    .login .modal-dialog{
+        width: 100%;
+    }
+}
+
+.big-login, .big-register{
+    background-color: #00bbff;
+    color: #FFFFFF;
+    border-radius: 7px;
+    border-width: 2px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    padding: 16px 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.big-login:hover{
+    background-color: #00A4E4;
+    color: #FFFFFF;
+}
+.big-register{
+    background-color: rgba(0,0,0,.0);
+    color: #00bbff;
+    border-color: #00bbff;
+}
+.big-register:hover{
+    border-color: #00A4E4;
+    color:  #00A4E4;
+}
